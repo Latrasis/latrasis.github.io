@@ -3,13 +3,10 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Jacob -- Web Developer -- @latrasis
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Normalize.css, jQuery, Modernizr, Bower
+    Bootstrap 3 Grid

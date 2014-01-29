@@ -1,0 +1,18 @@
+{
+  "name": "LatrasisWeb",
+  "version": "0.0.1",
+  "authors": [
+    "Latrasis <jacobapayne@gmail.com>"
+  ],
+  "description": "My Personal Website",
+  "license": "MIT",
+  "homepage": "latrasis.biz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

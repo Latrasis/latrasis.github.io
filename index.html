@@ -10,6 +10,9 @@
         <!-- Vendor -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-route/angular-route.min.js"></script>
         
@@ -20,16 +23,27 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="top navbar-fixed-top">
-            <a href="index.html"><h1>Jacob Payne</h1></a>
-            <nav class="top_nav">
-                <ul>
-                    <li><a href="http://twitter.com/latrasis">Twitter</a></li>
-                    <li><a href="https://github.com/Latrasis">Github</a></li>
-                    <li><a href="jacobpayne_junior.pdf">Resume</a></li>
-                </ul>
-            </nav>
+        <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="headerlink" href="index.html"><h1>Jacob Payne</h1></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="http://twitter.com/latrasis">Twitter</a></li>
+                <li><a href="https://github.com/Latrasis">Github</a></li>
+                <li><a href="jacobpayne_junior.pdf">Resume</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </header>
+
         <div ng-view id="main"></div>
         <!-- Footer -->
         <footer class="contact" id="contact">

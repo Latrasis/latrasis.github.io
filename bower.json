@@ -19,6 +19,7 @@
     "angular":"latest",
     "angular-route":"latest",
     "bootstrap":"latest",
-    "modernizr": "latest"
+    "modernizr": "latest",
+    "jquery": "latest"
   }
 }

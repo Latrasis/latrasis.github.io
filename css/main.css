@@ -58,44 +58,58 @@ footer.contact {position:relative; z-index: -2;}
 
 /* Header Module Rules */
 
-header.top {
+header.navbar-default {
 	width:auto;
-	height:auto;
-	padding: 10px 30px 20px 30px;
+	max-height:150px;
+	padding: 20px 30px 20px 30px;
 	background-color: #fff;
 	color:#fff;
+	border:none;
 }
 
-header.top h1 {
+header.headerlink {height:auto;}
+header h1 {
 	font-size: 1.5em;
 	text-transform: uppercase;
-	display: inline-block;
 	color:#333;
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 
-header.top h1:hover {}
+header h1:hover {}
 
 
-header.top nav.top_nav {
+header ul.nav {
 	display: inline-block;
 	float:right;
 	position: relative;
-	top:20px;
-	right:30px;
+	top:5px;
+
 	font-size: 1.2em;
 	color:#fff;
 }
 
-header.top nav.top_nav li {
-	display: inline-block;
-	margin-left: 0.5em;
+header button.navbar-toggle {
+	border: none;
 }
+/* Header Nav Responsive Rules */
 
-header.top nav.top_nav a {
-}
+@media (max-width:768px) {
+	header .navbar-collapse {
+		background-color: #fff;
+		width:100%;
+		border: none;
+		margin:0px;
+	}
 
-header.top nav.top_nav a:hover {
-	color:#333;
+	header.navbar-default {
+		padding-left:0px;
+		padding-right:0px;
+	}
+	header .navbar-header {
+		padding-left:20px;
+		padding-right:20px;
+	}
 }
 
 /* About Section Module Rules */

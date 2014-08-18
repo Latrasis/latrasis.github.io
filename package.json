@@ -1,0 +1,29 @@
+{
+  "name": "latrasis.github.io",
+  "version": "1.0.0",
+  "description": "Jacob Payne's Portfolio Website",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.8.7"
+  },
+  "devDependencies": {
+    "gulp-connect": "^2.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Latrasis/latrasis.github.io.git"
+  },
+  "keywords": [
+    "Jacob",
+    "Payne"
+  ],
+  "author": "Jacob Payne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Latrasis/latrasis.github.io/issues"
+  },
+  "homepage": "https://github.com/Latrasis/latrasis.github.io"
+}

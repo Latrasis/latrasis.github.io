@@ -25,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/Latrasis/latrasis.github.io/issues"
   },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "^0.0.9",
+    "gulp-sass": "^0.7.3",
+    "gulp-connect": "^2.0.6",
+    "gulp-util":"*",
+    "gulp-markdown-to-json":"*"
+  },
   "homepage": "https://github.com/Latrasis/latrasis.github.io"
 }

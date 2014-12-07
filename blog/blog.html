@@ -1,0 +1,12 @@
+<ul class="post-list">
+	<header><h2>Blog Posts:</h2></header>
+	<li ng-repeat="Post in blog" style="shuffle">
+		<a ng-href="#/blog/{{Post.slug}}" style="background-color: {{ '#'+Post.color }}">
+			<header>
+				<h2>{{ Post.title }}</h2>
+				<em>{{ Post.author }}</em>
+				<date>{{ Post.date }}</date>
+			</header>
+		</a>
+	</li>
+</ul>

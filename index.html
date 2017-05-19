@@ -1,74 +1,18 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
-<section class="jumbotron jumbotron-fluid site-frontpage-jumbo">
-  <div class="container">
+<section class="site-front site-front-home">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 site-frontpage-jumbo-header">
-        <h2 class="display-5">Introducing Neon</h2>
-        <h2 class="display-4">Build crash-free native Node.js plugins with Rust.</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Fast</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Secure</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Productive</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Easy</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="site-frontpage-example">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <pre><code>
-          fn main() {
-            println!("Hello World!");
-          }
-        </code></pre>
-      </div>
-      <div class="col-md-6">
-        <h2>Hello Neon!</h2>
-        <p>This is a complete Neon binding, it does exactly what you need and what you want. It's magical!</p>
-        <button>Hello World!</button>
-        <p>If the type is incorrect, Neon will automatically give a nice error for you!</p>
+      <div class="col offset-md-1">
+        <ul class="site-post-list">
+          {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

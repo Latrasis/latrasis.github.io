@@ -5,13 +5,13 @@ layout: default
 <section class="site-front site-front-post">
     <div class="container-fluid">
         <div class="row">
-            <header class="col offset-md-3">
+            <header class="col col-md-8 offset-md-1">
                 <h2>{{ page.title }}</h2>
-                <h5>{{ page.date }}</h5>
+                <h5>{{ page.date | date: "%a, %b %d, %y"}}</h5>
             </header>
         </div>
         <div class="row">
-            <div class="col offset-md-3">
+            <div class="col col-md-8 offset-md-1">
                 {{ content }}
             </div>
         </div>

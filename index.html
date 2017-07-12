@@ -5,11 +5,14 @@ layout: default
 <section class="site-front site-front-home">
   <div class="container-fluid">
     <div class="row">
-      <div class="col offset-md-1">
+      <div class="col col-md-8 offset-md-1">
         <ul class="site-post-list">
           {% for post in site.posts %}
           <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
+            <date class="site-post-date">{{ post.date | date: "%a, %b %d, %y"}}</date>
+            {{ post.excerpt }}
+            <a class="site-post-readmore" href="{{ post.url}}">Read More</a>
           </li>
           {% endfor %}
         </ul>

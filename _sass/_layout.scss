@@ -13,9 +13,24 @@ html, body {
 }
 
 .site-header {
-  height: 10%;
+  padding: 2rem 0 1rem;
   .site-header-nav {
-    .nav-link {
+
+    .site-header-nav-brand {
+    }
+
+    .site-header-nav-links {
+      list-style: none;
+      li {
+        display: inline-block;
+        a {
+          color: #aaa;
+          padding: 0.5rem 0.5rem;
+          &:hover {
+            color: #333;
+          }
+        }
+      }
     }
   }
 }
@@ -26,8 +41,21 @@ html, body {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    li { 
+      display: flex;
+      flex-direction: column;
+    }
+
+    li .site-post-date {
+      padding: 1rem 0rem;
+    }
     li a {
       font-size: 1.5rem;
+    }
+
+    li a.site-post-readmore {
+      font-size: 1rem;
     }
   }
 }
@@ -45,4 +73,10 @@ html, body {
 
 .site-footer {
   height: 10%;
+  padding: 1rem;
+  margin-top:2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

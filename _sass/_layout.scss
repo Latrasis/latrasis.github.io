@@ -16,7 +16,13 @@ html, body {
   padding: 2rem 0 1rem;
   .site-header-nav {
 
-    .site-header-nav-brand {
+    a.site-nav-brand {
+      color: #333;
+      font-size:1.3rem;
+      &:hover {
+        text-decoration: none;
+        color: #777;
+      }
     }
 
     .site-header-nav-links {
